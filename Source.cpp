@@ -1,37 +1,20 @@
+#include "pupupu.h"
 #include <iostream>
-#include <conio.h>
-
 using namespace std;
 
-class perAndS {
-private:
-	int a;
-	int b;
-public:
-	void GetA();
-	void GetB();
-	int RArea() {
-		return a * b;
-	}
-	int RPerimeter() {
-		return (a + b) * 2;
-	}
-};
 
-void perAndS::GetA() {
-	cin >> a;
-}
 
-void perAndS::GetB() {
-	cin >> b;
-}
-
-int main() {
-	perAndS R1;
-	R1.GetA();
-	R1.GetB();
-	cout << "Area: " << R1.RArea() << ", Perimeter: " << R1.RPerimeter() << endl;
-	getchar();
-	getchar();
+int main(int argc, char* argv[])
+{
+	setlocale(LC_ALL, "rus"); 
+	int day, month, year;
+	cout << "¬ведите текущий день мес€ц и год!\n";
+	cout << "день: ";     cin >> day;
+	cout << "мес€ц: ";    cin >> month;
+	cout << "год: ";  cin >> year;
+	CppStudio objCppstudio; 
+	objCppstudio.setDate(day, month, year); 
+	objCppstudio.getDate(); 
+	system("pause");
 	return 0;
 }
