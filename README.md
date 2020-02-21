@@ -4,8 +4,7 @@
 
 ## Discription
 
-Tis is my irst task with programming language C++ = realization - calculation of the area 
-and perimeter of the triangle.
+Tis is my irst task with programming language C++ = realization - counting of date
 
 ## Merging an upstream repository
 ...
